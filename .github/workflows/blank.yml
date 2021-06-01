@@ -34,11 +34,3 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
-      - name: Push to Docker
-        uses: docker/build-push-action@v2
-        with:
-          image: ishan139/git-actions-demo
-          registery: docker.io
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_PASSWORD }}
